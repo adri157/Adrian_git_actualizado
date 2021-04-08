@@ -3,9 +3,33 @@ body {background-color: lightblue;}
 p {color:
 	font-family "Lucida Console", Courier, monospace;
 }
+header {background-color: lightgreen;
+	/* width: 800px;
+	height: 74px; */
+	margin-bottom: 21px;
+}
+
 nav {background-color: yellow;
 	width: 200px;
 	height: 300px;
 	line-height: 3.0;
 	float: left;
+}
+nav>h1{margin-left: 30px;
+margin-bottom: 1px;
+}
+
+article {background-color: lightcoral;
+	/* width: 1000px;*/
+	margin-left: 210px;
+	padding-left: 10px;
+}
+
+footer{
+	background-color: silver;
+	/* height: 250px;*/
+}
+
+ul {
+	line-height: 20px;
 }
