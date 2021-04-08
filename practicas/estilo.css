@@ -3,3 +3,9 @@ body {background-color: lightblue;}
 p {color:
 	font-family "Lucida Console", Courier, monospace;
 }
+nav {background-color: yellow;
+	width: 200px;
+	height: 300px;
+	line-height: 3.0;
+	float: left;
+}
