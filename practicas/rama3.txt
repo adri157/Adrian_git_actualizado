@@ -1,0 +1,2 @@
+este es el archivo txt que se a pedido y el texto es:
+ este archivo te enseñara a programar. esto se a creado en rama3.
