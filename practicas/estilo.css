@@ -31,5 +31,8 @@ footer{
 }
 
 ul {
-	line-height: 20px;
+	line-height: 10px;
+}
+button {
+		right: 30px;
 }
