@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CanShip · La Oliva Emprende 2026</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root{
+    --navy:#14213d; --blue:#1d5fb8; --gold:#e3a20b; --gold-soft:#fdf1cf;
+    --card:#e9f1fb; --ink:#1d2433; --muted:#5b6475; --line:#d9dee7; --red:#c0281f;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#fff;color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;font-size:9.6pt;line-height:1.42}
+  .page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:0 13mm}
+  .page:last-child{page-break-after:auto}
+  .content{padding-top:11mm}
+  footer{position:absolute;left:13mm;right:13mm;bottom:8mm;border-top:1px solid var(--line);
+    padding-top:5px;font-size:7.5pt;color:var(--muted);display:flex;justify-content:space-between}
+  footer b{color:var(--ink)}
+  /* hero */
+  .hero{background:var(--navy);color:#fff;margin:0 -13mm;padding:10mm 13mm 8mm;position:relative}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.25em;color:var(--gold);font-size:10pt}
+  .logo span.c{background:var(--gold);color:var(--navy);width:30px;height:30px;border-radius:7px;display:grid;place-items:center;font-size:15pt;letter-spacing:0}
+  .hero h1{font-size:20pt;line-height:1.2;margin:12px 0 8px;max-width:125mm}
+  .hero h1 em{font-style:normal;color:var(--gold)}
+  .hero p{margin:0;color:#cfd6e4;max-width:120mm;font-size:9.8pt}
+  .pill{display:inline-block;margin-top:10px;border:1px solid #8b95ab;border-radius:20px;padding:3px 11px;font-size:7.8pt;color:#e6eaf2}
+  .map{position:absolute;right:13mm;top:9mm;width:52mm}
+  h2{font-size:13pt;margin:13px 0 6px;display:flex;gap:9px;align-items:baseline}
+  h2 .n{color:var(--blue)}
+  p{margin:0 0 6px}
+  .quote{background:var(--gold-soft);border-left:4px solid var(--gold);padding:7px 11px;font-style:italic;margin:7px 0;border-radius:3px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+  .card{background:var(--card);border-radius:6px;padding:7px 10px}
+  .card h3{font-size:9.6pt;margin:0 0 3px}
+  .card h3 .n{color:var(--blue);margin-right:4px}
+  .card p{font-size:8.6pt;color:#3a4357;margin:0}
+  table{width:100%;border-collapse:collapse;font-size:8.6pt}
+  th{background:var(--navy);color:#fff;text-align:left;font-weight:600;padding:5px 8px}
+  td{padding:4px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  td.r,th.r{text-align:right}
+  th.hl{background:#7a5507}
+  tr.total td{background:var(--gold-soft);font-weight:700}
+  tr.sub td{background:#f2f5fa;font-weight:600}
+  .red{color:var(--red);font-weight:700}
+  .ph{background:#fbe9a6;padding:0 4px;border-radius:3px;font-weight:600}
+  .note{font-size:7.5pt;color:var(--muted);margin-top:4px}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+  .stat{border-left:3px solid var(--blue);padding-left:9px}
+  .stat b{display:block;font-size:15pt;color:var(--navy)}
+  .stat b.g{color:var(--gold)}
+  .stat span{font-size:8pt;color:var(--muted)}
+  .box{border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+  ul{margin:0;padding-left:16px} li{margin-bottom:2px}
+  .tag{display:inline-block;border-radius:8px;padding:0 7px;font-size:7pt;font-weight:700;margin-right:4px}
+  .t1{background:#fbe9a6}.t2{background:#d6e6fb}.t3{background:#d4f0dc}
+  .phase{border-top:4px solid var(--blue);background:var(--card);border-radius:4px;padding:7px 10px}
+  .phase small{font-weight:700;color:var(--blue);font-size:7.5pt;letter-spacing:.05em}
+  .ia{background:#f2f5fa;border-radius:6px;padding:8px 11px;font-size:8.2pt;margin-top:10px}
+</style>
+</head>
+<body>
+
+<!-- ============ PÁGINA 1 ============ -->
+<section class="page">
+  <div class="hero">
+    <div class="logo"><span class="c">C</span>CANSHIP</div>
+    <h1>Compra en cualquier tienda de la Península y recógelo <em>en La Oliva</em></h1>
+    <p>Plataforma que te dice el precio final real (transporte + aduana + impuestos) antes de comprar y trae a Fuerteventura los pedidos de tiendas online que no envían a Canarias. Piloto en el municipio de La Oliva.</p>
+    <span class="pill">La Oliva Emprende 2026 · Proyecto en fase inicial</span>
+    <svg class="map" viewBox="0 0 200 220" aria-hidden="true">
+      <text x="40" y="12" fill="#cfd6e4" font-size="9">Almacén socio (3PL)</text>
+      <polygon points="40,40 130,25 185,60 150,110 60,105" fill="#24365d" stroke="#5d6f96"/>
+      <text x="95" y="78" fill="#9fb0d0" font-size="9" letter-spacing="3">PENÍNSULA</text>
+      <circle cx="105" cy="60" r="4" fill="#7fd0ff"/>
+      <path d="M105 60 C 125 110, 110 140, 75 170" stroke="#e3a20b" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <ellipse cx="68" cy="185" rx="9" ry="16" fill="#e3a20b" transform="rotate(25 68 185)"/>
+      <circle cx="75" cy="170" r="4" fill="#fff"/>
+      <g fill="#3c5ba8"><ellipse cx="45" cy="190" rx="6" ry="4"/><ellipse cx="28" cy="194" rx="7" ry="4"/><ellipse cx="12" cy="194" rx="5" ry="3"/><ellipse cx="-2" cy="190" rx="3" ry="2"/></g>
+      <text x="60" y="216" fill="#e3a20b" font-size="9" font-weight="700">Punto CanShip · La Oliva</text>
+    </svg>
+  </div>
+
+  <div class="content" style="padding-top:2mm">
+    <h2><span class="n">01</span>Resumen</h2>
+    <p><b>CanShip</b> da a los vecinos de La Oliva una dirección logística en la Península para comprar en tiendas online que <b>no envían a Canarias</b>. Antes de comprar, la calculadora <b>«Precio final Canarias»</b> muestra el coste total hasta el municipio y elige la vía más barata: los paquetes <b>viajan juntos</b> para abaratar el transporte, pero cada pedido se declara por separado para <b>conservar la exención de IGIC de los pedidos de hasta 150 €</b>. Se recogen en un <b>Punto CanShip dentro de un comercio de La Oliva</b>. No compramos barcos, aviones ni naves: coordinamos operadores que ya existen y pagamos por uso.</p>
+    <div class="quote">“Si una tienda vende online pero no envía a Canarias, para un vecino de La Oliva ese producto prácticamente no existe.” CanShip no promete que sea barato: promete que sea <b>posible</b> y que sepas el precio <b>antes</b> de pagar.</div>
+
+    <h2><span class="n">02</span>El problema</h2>
+    <div class="grid3">
+      <div class="card"><h3>Tiendas que no envían</h3><p>Muchas tiendas bloquean las direcciones canarias en el carrito: vender a Canarias es <b>exportar</b>, con trámites que no quieren asumir. Se estima que en torno al <b>70 %</b> no envía (Diario de Avisos, <span class="ph">[año]</span>).</p></div>
+      <div class="card"><h3>Costes que nadie explica</h3><p>Un envío Península → Canarias es una <b>importación</b>: declaración aduanera e IGIC/AIEM según valor y producto (ATC). Hasta 150 € puede estar exento; por encima, no. El comprador lo descubre cuando llega el paquete.</p></div>
+      <div class="card"><h3>Un municipio especialmente afectado</h3><p>La Oliva (<span class="ph">[hab. padrón INE 1-1-2025]</span>) está en una isla no capitalina y el <b>50,7 % de sus residentes son extranjeros</b> (ISTAC, 2024): muchos no conocen el sistema fiscal canario.</p></div>
+    </div>
+    <p style="margin-top:7px">La pregunta habitual es <i>«¿cuánto cuesta enviarlo?»</i>. La que importa, y que hoy nadie responde, es <b>«¿cuánto me va a costar REALMENTE tenerlo en La Oliva, y cuándo?»</b>.</p>
+
+    <h2><span class="n">03</span>Equipo</h2>
+    <table>
+      <tr><th>Integrante</th><th>Edad</th><th>Núcleo</th><th>Rol en CanShip</th><th>Qué aporta</th></tr>
+      <tr><td><b>Adrián Perdomo Pérez</b></td><td>17</td><td><span class="ph">[ ]</span></td><td>Coordinación, proveedores y cuentas</td><td><span class="ph">[estudios / experiencia]</span></td></tr>
+      <tr><td><b>Massari Bouchait De Grados</b></td><td>17</td><td><span class="ph">[ ]</span></td><td>Web, calculadora y datos</td><td><span class="ph">[estudios / experiencia]</span></td></tr>
+      <tr><td><b>Samuel Barbieri</b></td><td>17</td><td><span class="ph">[ ]</span></td><td>Atención al cliente, Punto y comercios</td><td><span class="ph">[idiomas que habla]</span></td></tr>
+    </table>
+    <p class="note">Los tres estamos empadronados en La Oliva y somos menores de edad: se adjuntan las autorizaciones de nuestros tutores. Declaración de uso de IA: página 5.</p>
+
+    <div class="stats">
+      <div class="stat"><b class="g">0 €</b><span>en barcos, aviones o naves propias</span></div>
+      <div class="stat"><b>4</b><span>idiomas: español, inglés, italiano y alemán</span></div>
+      <div class="stat"><b>≈79</b><span>pedidos/mes para cubrir costes fijos</span></div>
+      <div class="stat"><b class="g">100</b><span>pedidos/mes de vecinos de La Oliva al tercer mes</span></div>
+    </div>
+  </div>
+  <footer><span><b>CanShip</b> · Compra en la Península, recoge en La Oliva</span><b>1 / 5</b></footer>
+</section>
+
+<!-- ============ PÁGINA 2 ============ -->
+<section class="page"><div class="content">
+  <h2 style="margin-top:0"><span class="n">04</span>La solución: cómo funciona</h2>
+  <p>Ejemplo: una vecina de Corralejo quiere unas zapatillas de 120 € de una tienda de Madrid que no envía a Canarias.</p>
+  <div class="grid3">
+    <div class="card"><h3><span class="n">01</span>Pega el enlace</h3><p>En la web (español, inglés, italiano o alemán) o en el Punto CanShip.</p></div>
+    <div class="card"><h3><span class="n">02</span>Ve el precio final y el plazo</h3><p>La calculadora desglosa transporte, gestión, aduana e IGIC/AIEM y elige la vía más barata.</p></div>
+    <div class="card"><h3><span class="n">03</span>Compra en la tienda</h3><p>Usando su dirección CanShip en la Península (almacén socio 3PL).</p></div>
+    <div class="card"><h3><span class="n">04</span>Recepción y control</h3><p>El almacén comprueba que el producto coincide con el pedido (foto) y lo prepara.</p></div>
+    <div class="card"><h3><span class="n">05</span>Viaje agrupado y aduana</h3><p>Salidas martes y viernes. El agente de aduanas presenta una declaración por pedido.</p></div>
+    <div class="card"><h3><span class="n">06</span>Recogida en La Oliva</h3><p>Aviso por WhatsApp/email y recogida en el Punto CanShip.</p></div>
+  </div>
+  <p class="note"><b>Plazo estimado:</b> 7–12 días desde que la tienda envía (llegada al almacén 1–3 días + espera a la salida ≤ 3 días + transporte 72 h–5 días + aduana 1–2 días). Opción exprés individual: 4–6 días. Se confirmará con los proveedores.</p>
+
+  <h2><span class="n">05</span>Producto estrella: «Precio final Canarias»</h2>
+  <table>
+    <tr><th>Zapatillas de 120 € de una tienda de Madrid → La Oliva</th><th class="r">Envío individual</th><th class="r hl">CanShip piloto<sup>1</sup></th><th class="r">Error a evitar<sup>2</sup></th></tr>
+    <tr><td>Producto (precio de la tienda, IVA peninsular incluido)</td><td class="r">120,00 €</td><td class="r">120,00 €</td><td class="r">120,00 €</td></tr>
+    <tr><td>Transporte Península → Fuerteventura<sup>3</sup></td><td class="r">18,00 €</td><td class="r">10,00 €</td><td class="r">10,00 €</td></tr>
+    <tr><td>Tarifa de gestión CanShip (pedido de 100–200 €)</td><td class="r">8,90 €</td><td class="r">8,90 €</td><td class="r">8,90 €</td></tr>
+    <tr><td>Agrupación (viaje compartido)</td><td class="r">—</td><td class="r">3,00 €</td><td class="r">3,00 €</td></tr>
+    <tr><td>Declaración aduanera del agente<sup>3</sup></td><td class="r">5,00 €</td><td class="r">5,00 €</td><td class="r">6,67 €</td></tr>
+    <tr><td>IGIC 7 % · AIEM calzado: 0 €<sup>4</sup></td><td class="r">0,00 €</td><td class="r">0,00 €</td><td class="r red">9,10 €</td></tr>
+    <tr class="total"><td>PRECIO FINAL EN LA OLIVA (recogida en el Punto)</td><td class="r">151,90 €</td><td class="r">146,90 €</td><td class="r">157,67 €</td></tr>
+    <tr class="sub"><td>Diferencia frente a comprarlas en Madrid</td><td class="r">+31,90 €</td><td class="r">+26,90 €</td><td class="r">+37,67 €</td></tr>
+    <tr><td>…de la que se queda CanShip</td><td class="r">8,90 €</td><td class="r">11,90 €</td><td class="r">11,90 €</td></tr>
+  </table>
+  <p class="note">1 Tres pedidos de vecinos distintos viajan en una caja (≈30 €) pero cada uno lleva <b>su propia declaración simplificada</b>. 2 Si los tres pedidos (360 €) se declarasen juntos, se superaría el límite de 150 € y se pagaría IGIC que cada pedido no habría pagado por separado. 3 Estimaciones prudentes del equipo, por encima de la referencia pública (SEUR 72 h, desde 17 € + impuestos); se confirmarán con cada proveedor. 4 Las importaciones desde la Península con un valor global de hasta 150 € están exentas de IGIC (ATC, formulario simplificado de importación); el agente confirma el AIEM según el código TARIC.</p>
+
+  <div class="grid2" style="grid-template-columns:1.25fr 1fr;margin-top:8px">
+    <div class="quote" style="font-style:normal;margin:0"><b>Lo decimos claro:</b> traerlo cuesta unos <b>27 € más que en Madrid</b> (+22 %). Eso es transporte y aduana, que paga cualquier canario. CanShip se queda 11,90 € y aporta tres cosas: que <b>se pueda comprar</b>, que el vecino <b>sepa el precio antes</b> y que <b>no pague impuestos de más</b> por agrupar mal.</div>
+    <div><b>Transparencia en tres niveles</b><br>
+      <span class="tag t1">ESTIMADO</span>horquilla al pegar el enlace.<br>
+      <span class="tag t2">CONFIRMADO</span>el agente valida partida e impuestos antes de cobrar.<br>
+      <span class="tag t3">LIQUIDADO</span>pagado en el proceso: sin sorpresas en la entrega.</div>
+  </div>
+
+  <h2><span class="n">06</span>Qué nos diferencia</h2>
+  <table>
+    <tr><th>Alternativa actual</th><th>Qué ofrece</th><th>Qué le falta al vecino de La Oliva</th></tr>
+    <tr><td>Casilleros con dirección en la Península para canarios (<span class="ph">[nombres]</span>)</td><td>Dirección de entrega y reenvío a las islas</td><td><span class="ph">[comprobar: ¿precio final antes de comprar? ¿punto en Fuerteventura? ¿idiomas?]</span></td></tr>
+    <tr><td>Reenviadores extranjeros (p. ej. ColisExpat)</td><td>Dirección de tránsito y agrupación</td><td>No están especializados en la aduana canaria ni tienen presencia en la isla</td></tr>
+    <tr><td>Plataformas para tiendas (Packlink, Sendcloud)</td><td>Etiquetas y transporte a Canarias</td><td>Sirven a quien envía: si la tienda no envía, no ayudan al comprador</td></tr>
+    <tr class="sub"><td>CanShip</td><td colspan="2">Precio final <b>antes</b> de comprar + elige la vía que evita impuestos de más + aduana resuelta por un profesional + <b>punto físico en La Oliva</b> + 4 idiomas</td></tr>
+  </table>
+</div>
+<footer><span><b>CanShip</b> · Compra en la Península, recoge en La Oliva</span><b>2 / 5</b></footer>
+</section>
+
+<!-- ============ PÁGINA 3 ============ -->
+<section class="page"><div class="content">
+  <h2 style="margin-top:0"><span class="n">07</span>Recursos: tecnología sobre logística que ya existe</h2>
+  <p>CanShip es un <b>operador tecnológico</b>: no compra infraestructura, sino que contrata capacidad a empresas existentes y paga por paquete.</p>
+  <div class="grid2">
+    <div class="card"><h3><span class="n">A</span>Almacén socio en la Península (3PL)</h3><p>Recibe, fotografía, reembala y expide. Se paga por paquete: recepción (≈1,50 €) y reembalaje de las cajas agrupadas (≈2,00 €).</p></div>
+    <div class="card"><h3><span class="n">B</span>Transporte a Fuerteventura</h3><p>A comparar: Correos/Correos Express, SEUR (72 h a Canarias), MRW (marítimo, 5–10 días hábiles) y grupaje de Fred. Olsen Express.</p></div>
+    <div class="card"><h3><span class="n">C</span>Agente de aduanas (declarante)</h3><p>Presenta una declaración simplificada por pedido y liquida IGIC/AIEM cuando corresponde. <b>La responsabilidad aduanera recae en un profesional</b>, no en el equipo.</p></div>
+    <div class="card"><h3><span class="n">D</span>Punto CanShip en La Oliva</h3><p>Un comercio de Corralejo guarda y entrega los paquetes. Cobra <b>1 € por paquete</b> y recibe clientes nuevos. <span class="ph">[Carta de interés de: nombre del comercio]</span></p></div>
+  </div>
+
+  <h2><span class="n">08</span>Operación diaria</h2>
+  <div class="grid2">
+    <ul>
+      <li><b>Web y calculadora</b> con herramientas sin código y las tablas de IGIC/AIEM de la ATC. Regla automática: un pedido de hasta 150 € <b>nunca se declara junto a otros</b>.</li>
+      <li><b>Pedidos</b> en hoja de cálculo conectada a formularios; código de cliente por paquete.</li>
+    </ul>
+    <ul>
+      <li>Revisar pedidos y cuadrarlos con el almacén (30 min/día).</li>
+      <li>Atención en 4 idiomas por WhatsApp Business (turnos del equipo).</li>
+      <li>Martes y viernes: cierre de la salida agrupada.</li>
+    </ul>
+  </div>
+
+  <h2><span class="n">09</span>Catálogo, devoluciones y riesgos</h2>
+  <div class="grid2" style="grid-template-columns:1fr 1.1fr">
+    <div class="box">
+      <b>Empezamos por lo que menos se devuelve</b>
+      <ul style="list-style:none;padding-left:0;margin-top:3px">
+        <li>✔ Libros · recambios · material deportivo y de surf · videojuegos · material de oficina · pequeños electrónicos permitidos</li>
+        <li>! Ropa y calzado: con aviso de talla y coste de devolución visible</li>
+        <li>✖ Perecederos · alcohol y tabaco · mercancías peligrosas · productos con controles sanitarios</li>
+      </ul>
+      <b>Devoluciones</b>
+      <p style="font-size:8.6pt;margin:2px 0 0"><b>Error de la tienda:</b> lo detecta la foto del almacén y se devuelve en la Península, sin cruzar el océano. <b>Cambio de opinión:</b> vuelta a la Península con trámite de salida, ≈20–30 € a cargo del cliente, que lo ve antes de comprar.</p>
+    </div>
+    <table>
+      <tr><th>Riesgo</th><th>Cómo lo reducimos</th></tr>
+      <tr><td>Error en impuestos o aduana</td><td>Declara el agente; el precio pasa a «confirmado» antes de cobrar</td></tr>
+      <tr><td>Pagar IGIC de más al agrupar</td><td>Una declaración por pedido; la calculadora decide la vía</td></tr>
+      <tr><td>Costes reales mayores de lo estimado</td><td>Precios confirmados con cada proveedor antes de lanzar; tarifas revisadas cada mes</td></tr>
+      <tr><td>Producto prohibido</td><td>Catálogo cerrado y revisión del enlace antes de comprar</td></tr>
+      <tr><td>Pérdida o daño</td><td>Seguro del transportista y reserva de 1,00 € por pedido</td></tr>
+      <tr><td>Pocos pedidos al inicio</td><td>Costes fijos bajos (250 €/mes) y catálogo reducido</td></tr>
+    </table>
+  </div>
+
+  <h2><span class="n">10</span>Validación de la demanda</h2>
+  <p>Encuesta en 4 idiomas a vecinos de La Oliva (grupos vecinales de Corralejo, Lajares y El Cotillo, e institutos), del <span class="ph">[fecha]</span> al <span class="ph">[fecha]</span>: <span class="ph">[N]</span> respuestas.</p>
+  <div class="stats" style="margin-top:4px">
+    <div class="stat"><b><span class="ph">[X] %</span></b><span>ha intentado comprar en una tienda que no envía a Canarias</span></div>
+    <div class="stat"><b><span class="ph">[X] %</span></b><span>ha pagado en la entrega más de lo que esperaba</span></div>
+    <div class="stat"><b><span class="ph">[X] €</span></b><span>recargo máximo que aceptaría en un pedido de 100 €</span></div>
+    <div class="stat"><b><span class="ph">[N]</span></b><span>inscritos en la lista de espera (meta: 50 antes de la Gran Final)</span></div>
+  </div>
+  <p class="note">Tiendas más citadas: <span class="ph">[ ]</span>. Si el recargo aceptado queda por debajo de nuestro precio, el piloto se centrará en productos sin alternativa en la isla y en pedidos de mayor valor.</p>
+</div>
+<footer><span><b>CanShip</b> · Compra en la Península, recoge en La Oliva</span><b>3 / 5</b></footer>
+</section>
+
+<!-- ============ PÁGINA 4 ============ -->
+<section class="page"><div class="content">
+  <h2 style="margin-top:0"><span class="n">11</span>Cuánto gana CanShip por pedido</h2>
+  <div class="grid2" style="grid-template-columns:1.15fr 1fr">
+    <table>
+      <tr><th>Pedido medio de 100 € (tramo 50–100 €)</th><th class="r">€/pedido</th></tr>
+      <tr class="sub"><td>Ingresos de CanShip</td><td class="r">8,70</td></tr>
+      <tr><td>Tarifa de gestión</td><td class="r">6,90</td></tr>
+      <tr><td>Agrupación (60 % de los pedidos × 3,00 €)</td><td class="r">1,80</td></tr>
+      <tr class="sub"><td>Costes variables</td><td class="r">−5,50</td></tr>
+      <tr><td>Recepción y foto en el almacén</td><td class="r">−1,50</td></tr>
+      <tr><td>Reembalaje de cajas agrupadas (60 % × 2,00 €)</td><td class="r">−1,20</td></tr>
+      <tr><td>Comisión del Punto CanShip (comercio local)</td><td class="r">−1,00</td></tr>
+      <tr><td>Pasarela de pago</td><td class="r">−0,80</td></tr>
+      <tr><td>Reserva para incidencias</td><td class="r">−1,00</td></tr>
+      <tr class="total"><td>MARGEN POR PEDIDO</td><td class="r">3,20 €</td></tr>
+    </table>
+    <div>
+      <table>
+        <tr><th>Valor del pedido</th><th class="r">Tarifa de gestión</th></tr>
+        <tr><td>Menos de 50 €</td><td class="r">4,90 €</td></tr>
+        <tr><td>50–100 €</td><td class="r">6,90 €</td></tr>
+        <tr><td>100–200 €</td><td class="r">8,90 €</td></tr>
+        <tr><td>200–400 €</td><td class="r">11,90 €</td></tr>
+        <tr><td>Más de 400 €</td><td class="r">3 %</td></tr>
+      </table>
+      <p class="note">Transporte, declaración aduanera e impuestos se cobran a coste, sin margen oculto, y se pagan con el dinero del cliente: no requieren capital. A futuro: CanShip Plus (4,99 €/mes) y comisión a tiendas adheridas.</p>
+    </div>
+  </div>
+
+  <h2><span class="n">12</span>Punto de equilibrio y escenarios</h2>
+  <div class="grid2" style="grid-template-columns:1fr 1.4fr">
+    <div class="box">
+      <b>Costes fijos mensuales: 250 €</b>
+      <p style="font-size:8.4pt;margin:2px 0 4px">Software y hosting 45 € · seguro RC 35 € · gestoría 70 € · marketing 100 €.</p>
+      <b>250 € ÷ 3,20 € ≈ 79 pedidos/mes</b>
+      <p style="font-size:8.4pt;margin:2px 0 0">Unos 3 pedidos al día. Si el margen bajase a 2,00 €, el equilibrio subiría a 125 pedidos/mes y ajustaríamos tarifas.</p>
+    </div>
+    <table>
+      <tr><th>Escenario</th><th class="r">Pedidos/mes</th><th class="r">Resultado*</th></tr>
+      <tr><td>Mes 1–2 (arranque)</td><td class="r">30</td><td class="r">−154 €</td></tr>
+      <tr><td>Mes 3 (objetivo piloto)</td><td class="r">100</td><td class="r">+70 €</td></tr>
+      <tr><td>Mes 6 (La Oliva, 2 puntos)</td><td class="r">200</td><td class="r">+390 €</td></tr>
+      <tr><td>Mes 12 (toda Fuerteventura)</td><td class="r">500</td><td class="r">+1.350 €</td></tr>
+    </table>
+  </div>
+  <p class="note">* Antes de sueldos. En 2027 CanShip es una actividad complementaria del equipo, que no cobra sueldo. A partir de ≈360 pedidos/mes se puede pagar un primer empleo a media jornada (≈900 €/mes) para una persona joven del municipio.</p>
+
+  <h2><span class="n">13</span>Impacto positivo en La Oliva</h2>
+  <div class="grid2">
+    <div class="card"><h3>«Primero, aquí»: no competimos con el comercio local</h3><p>Antes de pedir fuera, la calculadora muestra los comercios de La Oliva adheridos que venden ese tipo de producto. CanShip es para lo que no se vende en la isla.</p></div>
+    <div class="card"><h3>Ingresos y clientes para el comercio</h3><p>El comercio que aloja el Punto cobra 1 € por paquete y recibe visitas nuevas. Objetivo: 2 comercios (Corralejo y Lajares/El Cotillo) en 2027.</p></div>
+    <div class="card"><h3>CanShip Export (desde abril de 2027)</h3><p>La misma red en sentido inverso para que productores locales (aloe, marcas de surf, artesanía) vendan a la Península. Objetivo: 2 productores piloto. <span class="ph">[contactos]</span></p></div>
+    <div class="card"><h3>Empleo joven y acceso para los vecinos</h3><p>Productos que hoy «no existen» para La Oliva, con el precio claro antes de pagar, y un primer contrato joven al alcanzar ≈360 pedidos/mes.</p></div>
+  </div>
+
+  <h2><span class="n">14</span>Sostenibilidad e inclusión</h2>
+  <div class="grid3">
+    <div class="card"><h3>Menos viajes, menos residuos</h3><p>Tres pedidos en una sola expedición (≈40 envíos evitados/mes al tercer mes). Errores de la tienda devueltos en la Península. Embalaje reutilizado.</p></div>
+    <div class="card"><h3>Para quien no compra online</h3><p>Compra asistida en el Punto para personas mayores o sin tarjeta: pedido en persona y pago con TPV o en efectivo.</p></div>
+    <div class="card"><h3>Para toda la población</h3><p>Web y atención en 4 idiomas en un municipio con un 50,7 % de residentes extranjeros. Mediremos el uso por género y por núcleo.</p></div>
+  </div>
+</div>
+<footer><span><b>CanShip</b> · Compra en la Península, recoge en La Oliva</span><b>4 / 5</b></footer>
+</section>
+
+<!-- ============ PÁGINA 5 ============ -->
+<section class="page"><div class="content">
+  <h2 style="margin-top:0"><span class="n">15</span>Hoja de ruta: empieza en La Oliva</h2>
+  <div class="grid3">
+    <div class="phase"><small>FASE 1 · ENE–JUN 2027</small><h3 style="margin:2px 0">Piloto La Oliva</h3><p style="font-size:8.6pt;margin:0">Web y calculadora · 1 almacén · 1 transportista · 1 agente · Punto en Corralejo; 2.º punto y Export desde abril. <b>Meta: 100 pedidos/mes en marzo y 200 en junio.</b></p></div>
+    <div class="phase"><small>FASE 2 · JUL–DIC 2027</small><h3 style="margin:2px 0">Toda Fuerteventura</h3><p style="font-size:8.6pt;margin:0">Puerto del Rosario y sur de la isla · CanShip Plus · primeras tiendas adheridas. <b>Meta: 500 pedidos/mes.</b></p></div>
+    <div class="phase"><small>FASE 3 · 2028</small><h3 style="margin:2px 0">Resto de Canarias</h3><p style="font-size:8.6pt;margin:0">Lanzarote → Gran Canaria → Tenerife, replicando el punto local en comercios de cada municipio. <b>Meta: cobertura regional.</b></p></div>
+  </div>
+
+  <h2><span class="n">16</span>Indicadores para el seguimiento municipal (2027)</h2>
+  <table>
+    <tr><th>Indicador (solo municipio de La Oliva)</th><th class="r">A los 3 meses (abr. 2027)</th><th class="r">A los 6 meses (jul. 2027)</th></tr>
+    <tr><td>Pedidos entregados</td><td class="r">100/mes</td><td class="r">200/mes</td></tr>
+    <tr><td>Vecinos que han hecho al menos un pedido</td><td class="r">250</td><td class="r">450</td></tr>
+    <tr><td>Núcleos con usuarios / reparto por género</td><td class="r">≥ 3 / medido</td><td class="r">≥ 5 / equilibrado ±10 pt</td></tr>
+    <tr><td>Comercios colaboradores / ingresos que reciben</td><td class="r">1 / 100 €/mes</td><td class="r">2 / 200 €/mes</td></tr>
+    <tr><td>Productores locales en CanShip Export</td><td class="r">en preparación</td><td class="r">2</td></tr>
+    <tr><td>Resultado mensual (antes de sueldos)</td><td class="r">+70 €</td><td class="r">+390 €</td></tr>
+  </table>
+
+  <div class="ia"><b>Declaración de uso de Inteligencia Artificial.</b> Conforme a las bases, el equipo declara que ha utilizado IA (Claude, de Anthropic) como herramienta de apoyo para revisar, estructurar y redactar este documento. La idea y las decisiones son del equipo; las cifras de terceros se han contrastado con las fuentes indicadas y las estimaciones propias aparecen señaladas como tales.</div>
+  <p class="note" style="margin-top:8px">Fuentes: Agencia Tributaria Canaria (IGIC, AIEM y formulario simplificado de importación para envíos de hasta 150 €), ISTAC vía eldiario.es (población extranjera de La Oliva, 2024), INE (padrón), Diario de Avisos (tiendas que no envían a Canarias) y las webs de Fred. Olsen Express, MRW, SEUR, Correos, Packlink, Sendcloud y ColisExpat. Los precios de terceros son estimaciones y se confirmarán con cada proveedor.</p>
+</div>
+<footer><span><b>CanShip</b> · Compra en la Península, recoge en La Oliva</span><b>5 / 5</b></footer>
+</section>
+
+</body>
+</html>
