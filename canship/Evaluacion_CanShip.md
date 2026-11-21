@@ -5,7 +5,7 @@
 | Requisito | Estado |
 |---|---|
 | PDF de 5 páginas como máximo | ✅ 5 páginas |
-| Problema, solución, recursos, presupuesto e impacto local | ✅ Están todos (presupuesto en la sección 11) |
+| Problema, solución, recursos, presupuesto e impacto local | ✅ Están todos (presupuesto en la sección 10) |
 | Evaluación anónima | ✅ Sin nombres ni sección de equipo; los roles están en Recursos (sección 06) y los datos personales van en el formulario de inscripción |
 | Uso de IA declarado | ✅ Página 5 |
 | Menores: autorización del tutor | ⚠️ Entregar las 3 autorizaciones con la inscripción |
